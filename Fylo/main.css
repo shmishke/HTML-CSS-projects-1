@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --intro-and-email-sign-up-background: hsl(217, 28%, 15%);
+  --main-background: hsl(218, 28%, 13%);
+  --footer-background: hsl(216, 53%, 9%);
+  --testimonials-background: hsl(219, 30%, 18%);
+}
+body {
+  max-width: 100%;
+  background: var(--main-background);
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  /*Headings, Call-to-actions, Header Navigation*/
+  /* font-family: "Raleway", sans-serif; */
+}
+header {
+  min-height: 100vh;
+}
+h1,
+h3 {
+  font-family: "Raleway", sans-serif;
+}
+p {
+  font-size: 0.9rem;
+  color: rgb(154, 156, 158);
+}
+.nav-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 90.8px;
+  background: transparent;
+}
+.nav-logo {
+  margin: 1rem;
+  flex: 0 0 30%;
+}
+.nav-links {
+  display: block;
+  flex: 0 1 70%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.single-link {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+}
+.single-link a {
+  text-decoration: none;
+  color: white;
+}
+.hero-img {
+  max-width: 100vw;
+  height: 50vh;
+  background: url(./images/illustration-intro.png) center/contain no-repeat;
+}
+.hero-text {
+  text-align: center;
+  margin: 3rem;
+}
+.hero-text h1 {
+  padding: 1.7rem 0;
+}
+.hero-text p {
+  margin: 1.7rem 0;
+  margin-top: 0;
+  padding: 0 3rem;
+  line-height: 25px;
+}
+.hero-btn {
+  border: 1px solid transparent;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  background: rgb(59, 185, 223);
+  border-radius: 50px;
+}
+.hero-btn a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+}
+@media screen and (min-width: 1250px) {
+  .hero {
+    margin: 0 23rem;
+  }
+  .hero-btn {
+    max-width: 50%;
+  }
+}
+.single-service {
+  margin: 5rem 3rem;
+  text-align: center;
+}
+.single-service h3 {
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+  font-weight: bold;
+}
+.single-service p {
+  line-height: 1.4rem;
+}
+@media screen and (min-width: 786px) {
+  .services-center {
+    margin: 0 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about {
+  margin: 3rem;
+}
+.about-img {
+  height: 50vh;
+  width: calc(100% - 3rem);
+  background: url(./images/illustration-stay-productive.png) center/contain
+    no-repeat;
+}
+.about-text h3 {
+  margin: 1.8rem 0;
+}
+.about-link {
+  margin-top: 1.8rem;
+}
+.about-link a {
+  color: rgb(59, 185, 223);
+  text-decoration: none;
+  border-bottom: 3px solid rgb(59, 185, 223);
+}
+.about-link img {
+  padding-left: 5px;
+}
+@media screen and (min-width: 997px) {
+  .about-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.customers {
+  margin: 3rem;
+}
+.customer-icon {
+  margin-bottom: -5px;
+}
+.single-customer {
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  background: var(--testimonials-background);
+  margin-bottom: 3rem;
+}
+.single-customer-center {
+  margin: 2rem 1.4rem;
+}
+.customer-text > p {
+  line-height: 25px;
+  padding-bottom: 1.8rem;
+  color: white;
+}
+.customer-img {
+  padding-right: 1rem;
+}
+.customer-img img {
+  display: inline-block;
+  border-radius: 50%;
+  width: 50px;
+}
+.customer-profile {
+  display: flex;
+}
+.customer-profile-text {
+  justify-self: center;
+  align-self: baseline;
+}
+@media screen and (min-width: 996px) {
+  .customers-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+  }
+  .single-customer {
+    margin-right: 2rem;
+  }
+}
+.contact-center {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 3rem 1.3rem;
+  text-align: center;
+}
+.contact-text {
+  margin: 1.8rem 1.5rem;
+}
+.contact-text h3 {
+  padding-bottom: 1.5rem;
+}
+.contact-input {
+  margin-bottom: 2rem;
+}
+.contact-email,
+.contact-btn {
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 0px;
+  height: 3rem;
+}
+.contact-email input,
+.contact-btn {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.contact-btn {
+  background: rgb(59, 185, 223);
+  text-align: center;
+  height: 46px;
+  padding-top: 10px;
+  margin-top: 1.2rem;
+}
+.contact-btn a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
